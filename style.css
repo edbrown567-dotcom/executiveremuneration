@@ -278,8 +278,8 @@ main > .card:first-child { padding-top: 4px; }
 
 /* About page */
 .page-about .post-head { margin-bottom: 36px; }
-.author-card { display: flex; flex-direction: row-reverse; justify-content: space-between; align-items: center; gap: 26px; margin: 0 0 34px; }
-.author-card img { width: 165px; height: auto; border-radius: 1px; filter: grayscale(100%) contrast(1.02); opacity: .94; flex: none; }
+.author-card { display: flex; flex-direction: row-reverse; justify-content: center; align-items: center; gap: 52px; margin: 0 0 34px; }
+.author-card img { width: 200px; height: auto; aspect-ratio: 0.74; object-fit: cover; object-position: 90% 35%; border-radius: 1px; filter: grayscale(100%) contrast(1.02); opacity: .94; flex: none; }
 .author-card p { margin: 0; }
 .author-name { font-family: var(--display); font-weight: 600; font-size: 1.7rem; line-height: 1.15; }
 .author-chambers { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-top: 6px !important; }
@@ -290,9 +290,13 @@ main > .card:first-child { padding-top: 4px; }
 .page-about .prose .contact a { color: var(--soft); border-bottom: 1px solid var(--rule); }
 .page-about .prose .contact a:hover { color: var(--accent); }
 @media (max-width: 600px) {
-  .author-card { gap: 18px; }
-  .author-card img { width: 120px; }
+  .author-card { justify-content: space-between; gap: 18px; }
+  .author-card img { width: clamp(112px, 34vw, 132px); }
   .author-name { font-size: 1.45rem; }
+}
+@media (max-width: 380px) {
+  .author-card img { width: 112px; }
+  .author-name { font-size: 1.35rem; }
 }
 
 /* Order link */
