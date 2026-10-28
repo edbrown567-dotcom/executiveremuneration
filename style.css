@@ -318,3 +318,40 @@ main > .card:first-child { padding-top: 4px; }
 .notfound p { text-align: center; color: var(--soft); margin: 0; }
 .notfound a { color: var(--accent); border-bottom: 1px solid var(--rule); }
 .book .order { font-size: inherit; }
+
+/* Email sign-up */
+.book .book-signup a { font-size: 1rem; color: var(--muted); border-bottom: 1px solid var(--rule); transition: color .2s, border-color .2s; }
+.book .book-signup a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.signup { text-align: center; }
+.signup-intro { font-family: var(--display); font-style: italic; font-size: 1.3rem; line-height: 1.5; color: var(--soft); max-width: 600px; margin: 0 auto 28px !important; text-wrap: balance; }
+.signup-form { max-width: 460px; margin: 0 auto 22px; }
+.signup-small { font-size: 0.8rem; line-height: 1.6; color: var(--muted); max-width: 460px; margin: 0 auto !important; }
+.prose .signup-small a { color: var(--muted); border-bottom: 1px solid var(--rule); }
+.prose .signup-small a:hover { color: var(--accent); }
+.plain p { margin: 0 0 1.15em; }
+
+/* The EmailOctopus form, restyled to match the site. Its own stylesheet is injected after this one,
+   so these rules carry an extra class and !important where they override it. */
+.signup .signup-form .inline-container, .signup .signup-form .form-container, .signup .signup-form .emailoctopus-form-wrapper { margin: 0 !important; padding: 0 !important; background: none !important; border: 0 !important; box-shadow: none !important; max-width: none !important; }
+.signup .signup-form .main-form { display: flex !important; flex-wrap: nowrap !important; align-items: stretch !important; justify-content: center !important; gap: 10px; }
+.signup .signup-form [eo-form-fields-container] { display: block !important; flex: 1 1 auto !important; min-width: 0 !important; }
+.signup .signup-form .emailoctopus-form-row { margin: 0 !important; min-width: 0 !important; }
+.signup .signup-form input[type="email"] { display: block; width: 100% !important; height: auto !important; margin: 0 !important; font-family: var(--text) !important; font-size: 1rem !important; line-height: 1.4 !important; padding: 10px 12px !important; border: 1px solid var(--rule) !important; border-radius: 2px !important; background: #fff !important; color: var(--ink) !important; box-shadow: none !important; }
+.signup .signup-form input[type="email"]:focus { border-color: var(--accent) !important; outline: none !important; }
+.signup .signup-form input[type="email"]::placeholder { color: var(--muted) !important; opacity: 1; }
+.signup .signup-form input[type="submit"] { flex: 0 0 auto !important; width: auto !important; height: auto !important; margin: 0 !important; padding: 0 18px !important; font-family: var(--text) !important; font-size: 0.72rem !important; font-weight: 400 !important; line-height: 1 !important; letter-spacing: 0.16em !important; text-transform: uppercase; border: 1px solid var(--accent) !important; border-radius: 2px !important; background: transparent !important; color: var(--accent) !important; box-shadow: none !important; cursor: pointer; transition: background .2s, color .2s; }
+.signup .signup-form input[type="submit"]:hover, .signup .signup-form input[type="submit"]:focus-visible { background: var(--accent) !important; color: var(--bg) !important; }
+.signup .signup-form input[type="submit"][disabled] { opacity: 0.6; cursor: default; }
+.signup .signup-form .emailoctopus-success-message, .signup .signup-form .emailoctopus-error-message { margin: 0 !important; text-align: center; }
+.signup .signup-form .emailoctopus-success-message:not(:empty) { font-family: var(--display); font-style: italic; font-size: 1.25rem; line-height: 1.45; color: var(--ink); text-wrap: balance; }
+.signup .signup-form .emailoctopus-error-message:not(:empty) { font-size: 0.85rem; color: var(--accent); margin-bottom: 10px !important; }
+.signup .signup-form [eo-block="powered-by"] { margin: 12px 0 0 !important; padding: 0 !important; filter: grayscale(1); opacity: 0.6; }
+.signup .signup-form [eo-block="powered-by"] p { margin: 0 !important; font-family: var(--text) !important; font-size: 0.7rem !important; color: var(--muted) !important; }
+.prose .signup .signup-form [eo-block="powered-by"] a { border-bottom: 0; color: var(--muted); }
+@media (prefers-color-scheme: dark) {
+  .signup .signup-form input[type="email"] { background: var(--panel) !important; }
+}
+@media (max-width: 420px) {
+  .signup .signup-form .main-form { flex-direction: column !important; }
+  .signup .signup-form input[type="submit"] { padding: 12px 18px !important; }
+}
