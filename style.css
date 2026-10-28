@@ -329,6 +329,9 @@ main > .card:first-child { padding-top: 4px; }
 .prose .signup-small a { color: var(--muted); border-bottom: 1px solid var(--rule); }
 .prose .signup-small a:hover { color: var(--accent); }
 .plain p { margin: 0 0 1.15em; }
+.intro .intro-signup { margin-top: 12px; font-size: 1rem; }
+.intro-signup a, .foot-signup a { color: var(--muted); border-bottom: 1px solid var(--rule); transition: color .2s, border-color .2s; }
+.intro-signup a:hover, .foot-signup a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 /* The EmailOctopus form, restyled to match the site. Its own stylesheet is injected after this one,
    so these rules carry an extra class and !important where they override it. */
