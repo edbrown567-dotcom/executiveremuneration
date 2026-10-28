@@ -348,9 +348,8 @@ main > .card:first-child { padding-top: 4px; }
 .signup .signup-form .emailoctopus-success-message, .signup .signup-form .emailoctopus-error-message { margin: 0 !important; text-align: center; }
 .signup .signup-form .emailoctopus-success-message:not(:empty) { font-family: var(--display); font-style: italic; font-size: 1.25rem; line-height: 1.45; color: var(--ink); text-wrap: balance; }
 .signup .signup-form .emailoctopus-error-message:not(:empty) { font-size: 0.85rem; color: var(--accent); margin-bottom: 10px !important; }
-.signup .signup-form [eo-block="powered-by"] { margin: 12px 0 0 !important; padding: 0 !important; filter: grayscale(1); opacity: 0.6; }
-.signup .signup-form [eo-block="powered-by"] p { margin: 0 !important; font-family: var(--text) !important; font-size: 0.7rem !important; color: var(--muted) !important; }
-.prose .signup .signup-form [eo-block="powered-by"] a { border-bottom: 0; color: var(--muted); }
+/* "Powered by EmailOctopus" hidden: the account has been on the Pro plan since 28 October 2026, which allows the branding to be removed. */
+.signup .signup-form [eo-block="powered-by"] { display: none !important; }
 @media (prefers-color-scheme: dark) {
   .signup .signup-form input[type="email"] { background: var(--panel) !important; }
 }
