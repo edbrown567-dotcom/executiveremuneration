@@ -9,7 +9,7 @@
   --bg: #fcfbf8;
   --ink: #1b1d22;
   --soft: #4a4f5a;
-  --muted: #7c818c;
+  --muted: #6f7480;
   --rule: #ddd9cf;
   --accent: #6b1d2a;
   --band: #6b1d2a;
@@ -152,6 +152,7 @@ main > .card:first-child { padding-top: 4px; }
   line-height: 1.1;
   margin: 0 0 18px;
   letter-spacing: -0.005em;
+  text-wrap: pretty;
 }
 .dek {
   font-family: var(--display);
