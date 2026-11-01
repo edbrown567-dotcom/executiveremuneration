@@ -265,6 +265,9 @@ main > .card:first-child { padding-top: 4px; }
 .foot-mark { font-family: var(--display); font-size: 1.25rem; color: var(--ink); margin-bottom: 10px !important; }
 .site-foot a:hover { color: var(--accent); }
 .small { font-size: 0.74rem; max-width: 520px; margin-left: auto !important; margin-right: auto !important; }
+.site-foot .foot-linkedin { margin: 16px 0 14px; line-height: 0; }
+.foot-linkedin a { display: inline-block; padding: 6px; margin: -6px; }
+.foot-linkedin img { display: block; width: 14px; height: 13px; }
 
 @media (max-width: 600px) {
   body { font-size: 17.5px; }
