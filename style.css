@@ -294,6 +294,8 @@ main > .card:first-child { padding-top: 4px; }
 .contact-label { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px !important; }
 .page-about .prose .contact a { color: var(--soft); border-bottom: 1px solid var(--rule); }
 .page-about .prose .contact a:hover { color: var(--accent); }
+.page-about .prose .contact a.contact-linkedin { border-bottom: 0; }
+.contact-linkedin img { display: inline-block; width: 14px; height: 13px; vertical-align: -1px; }
 @media (max-width: 600px) {
   .author-card { justify-content: space-between; gap: 18px; }
   .author-card img { width: clamp(112px, 34vw, 132px); }
